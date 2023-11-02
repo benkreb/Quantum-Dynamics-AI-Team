@@ -68,6 +68,11 @@ def blackjack():
                 else:
                     break
 
+                if user_score > 21:
+                    print("You bust! You lose...")
+                    player['balance'] -= bet
+                    break
+
             while computer_score != 'Blackjack' and computer_score < 17:
                 computer_hand.append(deal_card())
                 computer_score = calculate_score(computer_hand)
@@ -96,6 +101,8 @@ def blackjack():
     # Determine and display the overall winner
     winner = max(players, key=lambda x: x['balance'])
     print(f"The winner is {winner['name']} with a balance of ${winner['balance']}!")
+
+print("Thank you for playing Blackjack!")
 
 blackjack()
 
