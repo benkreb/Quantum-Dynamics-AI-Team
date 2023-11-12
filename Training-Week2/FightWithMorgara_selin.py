@@ -61,8 +61,9 @@ class Game:
         input("Press Enter to begin your adventure...")
 
         while self.player.health > 0 and self.enemy.health > 0 and self.current_phase <= self.story_phases:
-            print(f"\n--- Phase {self.current_phase} ---")
+            self.print_story(self.current_phase)
             input("Press Enter to continue...")
+            print(f"\n--- Phase {self.current_phase} ---")
             self.battle()
             self.current_phase += 1
 
@@ -111,8 +112,5 @@ class Game:
         ]
         print(story[phase - 1])
 
-      
-
-if __name__ == "__main__":
-    game = Game()
-    game.start()
+game = Game()
+game.start()
