@@ -1,0 +1,1 @@
+This is ipynb a file for pandas exercises. You should complete the given spaces with the instructions in given code file and upload it in the folder with your name.
