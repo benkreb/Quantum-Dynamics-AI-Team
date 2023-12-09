@@ -1,2 +1,3 @@
 This is ipynb a file for pandas exercises.
 You should complete the given spaces with the instructions in the given code file and upload it to the folder with your name.
+You can use Jupyter Notebook or Google Colab for this task.
